@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-01-04T11:47:18Z" product-name="typoscriptce">
+        <header/>
+        <body>
+            <trans-unit id="tt_content.CType_pi1" xml:space="preserve">
+				<source>Typoscript CE</source>
+			</trans-unit>
+            <trans-unit id="typoscript" xml:space="preserve">
+				<source>Typoscript (Object COA / COA_INT)</source>
+			</trans-unit>
+            <trans-unit id="no_cache" xml:space="preserve">
+				<source>Uncached object (COA_INT)</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>
