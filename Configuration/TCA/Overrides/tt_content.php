@@ -9,10 +9,8 @@ $GLOBALS['TCA']['tt_content']['columns']['bodytext']['defaultExtras'] =
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
     [
         'LLL:EXT:typoscriptce/Resources/Private/Language/localang_db.xlf:tt_content.CType_pi1',
-        'typoscriptce_pi1',
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('typoscriptce').'ext_icon.gif'
+        'typoscriptce_pi1'
     ],
     'CType',
     'typoscriptce'
 );
-
