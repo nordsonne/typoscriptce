@@ -1,10 +1,19 @@
 <?php
 
-$GLOBALS['TCA']['tt_content']['types']['typoscriptce_pi1']['showitem']=
-    'CType;;4;button;1-1-1,header;;3;;1-1-1,bodytext;LLL:EXT:typoscriptce/Resources/Private/Language/localang_db.xlf:typoscript,imageborder;LLL:EXT:typoscriptce/Resources/Private/Language/localang_db.xlf:no_cache,2-2-2';
-
-$GLOBALS['TCA']['tt_content']['columns']['bodytext']['defaultExtras'] =
-    'fixed-font : enable-tab';
+$GLOBALS['TCA']['tt_content']['types']['typoscriptce_pi1'] = [
+    'showitem' => '
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
+        header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.html_formlabel,
+        bodytext;LLL:EXT:typoscriptce/Resources/Private/Language/localang_db.xlf:typoscript,
+        imageborder;LLL:EXT:typoscriptce/Resources/Private/Language/localang_db.xlf:no_cache
+    ',
+    'columnsOverrides' => [
+        'bodytext' => [
+            'defaultExtras' =>  'fixed-font : enable-tab'
+        ]
+    ]
+];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
     [
