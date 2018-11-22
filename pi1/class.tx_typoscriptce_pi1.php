@@ -26,7 +26,6 @@
  *
  * Hint: use extdeveval to insert/update function index above.
  */
-
 use TYPO3\CMS\Core\TypoScript\Parser\TypoScriptParser;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\Plugin\AbstractPlugin;
@@ -35,8 +34,6 @@ use TYPO3\CMS\Frontend\Plugin\AbstractPlugin;
  * Plugin 'Typoscript Object' for the 'typoscriptce' extension.
  *
  * @author    Steffen Kamper <info@sk-typo3.de>
- * @package    TYPO3
- * @subpackage    tx_typoscriptce
  */
 class tx_typoscriptce_pi1 extends AbstractPlugin
 {
@@ -52,7 +49,7 @@ class tx_typoscriptce_pi1 extends AbstractPlugin
      * @param    array $conf : The PlugIn configuration
      * @return   string the content that is displayed on the website
      */
-    function main($content, $conf)
+    public function main($content, $conf)
     {
         // get data
         $obj = $this->cObj->data['imageborder'] ? 'COA_INT' : 'COA';
