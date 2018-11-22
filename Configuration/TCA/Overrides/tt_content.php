@@ -10,7 +10,11 @@ $GLOBALS['TCA']['tt_content']['types']['typoscriptce_pi1'] = [
     ',
     'columnsOverrides' => [
         'bodytext' => [
-            'defaultExtras' =>  'fixed-font : enable-tab'
+            'defaultExtras' =>  'fixed-font : enable-tab',
+            'config' => [
+                'renderType' => 't3editor',
+                'format' => 'typoscript'
+            ]
         ]
     ]
 ];
