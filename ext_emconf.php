@@ -14,31 +14,20 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'Typoscript CE',
     'description' => 'process any typoscript in a CE',
     'category' => 'plugin',
-    'shy' => 0,
     'version' => '0.1.2',
     'dependencies' => '',
     'conflicts' => '',
     'priority' => '',
-    'loadOrder' => '',
     'module' => '',
     'state' => 'stable',
     'uploadfolder' => 0,
-    'createDirs' => '',
-    'modify_tables' => '',
     'clearcacheonload' => 0,
-    'lockType' => '',
     'author' => 'Steffen Kamper, Sven Jürgens',
     'author_email' => 'sj@nordsonne.de',
     'author_company' => '',
-    'CGLcompliance' => '',
-    'CGLcompliance_note' => '',
     'constraints' => [
         'depends' => [],
         'conflicts' => [],
         'suggests' => [],
-    ],
-    'autoload' => [
-            'psr-4' => ['SvenJuergens\\Typoscriptce\\' => 'Classes'],
-            'classmap' => ['pi1']
-        ],
+    ]
 ];
