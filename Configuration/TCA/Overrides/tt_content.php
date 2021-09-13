@@ -6,7 +6,10 @@ $GLOBALS['TCA']['tt_content']['types']['typoscriptce_pi1'] = [
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
         header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.html_formlabel,
         bodytext;LLL:EXT:typoscriptce/Resources/Private/Language/localang_db.xlf:typoscript,
-        imageborder;LLL:EXT:typoscriptce/Resources/Private/Language/localang_db.xlf:no_cache
+        imageborder;LLL:EXT:typoscriptce/Resources/Private/Language/localang_db.xlf:no_cache,
+        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+            --palette--;;hidden,
+            --palette--;;access,
     ',
     'columnsOverrides' => [
         'bodytext' => [
@@ -19,11 +22,16 @@ $GLOBALS['TCA']['tt_content']['types']['typoscriptce_pi1'] = [
     ]
 ];
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+    'tt_content',
+    'CType',
     [
         'LLL:EXT:typoscriptce/Resources/Private/Language/localang_db.xlf:tt_content.CType_pi1',
-        'typoscriptce_pi1'
+        'typoscriptce_pi1',
+        'content-text',
     ],
-    'CType',
-    'typoscriptce'
+    'textmedia',
+    'after'
 );
+

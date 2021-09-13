@@ -1,0 +1,13 @@
+tt_content.typoscriptce_pi1 >
+tt_content.typoscriptce_pi1 =< lib.contentElement
+tt_content.typoscriptce_pi1 {
+    ################
+    ### TEMPLATE ###
+    ################
+    templateName = Typoscriptce
+    templateRootPaths.1543250337 = EXT:typoscriptce/Resources/Private/Templates/
+    dataProcessing.10 = SvenJuergens\Typoscriptce\DataProcessing\TypoScriptProcessor
+    dataProcessing.10 {
+        as = typoscriptContent
+    }
+}
