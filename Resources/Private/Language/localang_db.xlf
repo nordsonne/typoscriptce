@@ -4,7 +4,10 @@
         <header/>
         <body>
             <trans-unit id="tt_content.CType_pi1" xml:space="preserve">
-				<source>Typoscript CE</source>
+				<source>TypoScript CE</source>
+			</trans-unit>
+            <trans-unit id="tt_content.CType_pi1.description" xml:space="preserve">
+				<source>Füge TypoScript als ContentElement ein</source>
 			</trans-unit>
             <trans-unit id="typoscript" xml:space="preserve">
 				<source>Typoscript (Object COA / COA_INT)</source>

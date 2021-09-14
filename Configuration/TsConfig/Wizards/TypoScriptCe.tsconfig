@@ -1,0 +1,16 @@
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+mod.wizards.newContentElement.wizardItems.common {
+  elements {
+    typoscriptce {
+      iconIdentifier = content-text
+      title = LLL:EXT:typoscriptce/Resources/Private/Language/localang_db.xlf:tt_content.CType_pi1
+      description = LLL:EXT:typoscriptce/Resources/Private/Language/localang_db.xlf:tt_content.CType_pi1.description
+      tt_content_defValues {
+        CType = typoscriptce_pi1
+      }
+    }
+  }
+  show := addToList(typoscriptce)
+}

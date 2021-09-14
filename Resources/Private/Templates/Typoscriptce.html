@@ -2,10 +2,8 @@
 <f:layout name="Default" />
 <f:section name="Header" />
 <f:section name="Main">
-
-    <f:if condition="{typoscriptceContent}">
-        <f:format.raw>{typoscriptceContent}</f:format.raw>
+    <f:if condition="{typoscriptContent}">
+        <f:format.raw>{typoscriptContent}</f:format.raw>
     </f:if>
-
 </f:section>
 </html>
